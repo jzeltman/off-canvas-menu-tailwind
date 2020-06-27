@@ -1,0 +1,21 @@
+{
+  "name": "off-canvas-menu-tailwind",
+  "version": "0.0.1",
+  "description": "Off Canvas Menu with Tailwind",
+  "main": "src/index.js",
+  "repository": "https://github.com/jzeltman/off-canvas-menu-tailwind.git",
+  "author": "Josh Zeltman <joshua.zeltman@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "concurrently": "^5.2.0",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "scripts": {
+    "build": "postcss src/css/index.css -o index.css",
+    "watch": "concurrently \"live-server\" \"postcss -w src/css/index.css -o index.css\""
+  }
+}

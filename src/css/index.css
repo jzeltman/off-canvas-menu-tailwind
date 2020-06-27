@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('//fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+body {
+  @apply min-h-screen;
+  background: theme('colors.blue.light');
+  background: linear-gradient(to bottom,  theme('colors.blue.light') 0%, theme('colors.tan.light') 100%);
+}
+
+.nav {
+  background: theme('colors.tan.light');
+  background: linear-gradient(to bottom,  theme('colors.green.light') 0%, theme('colors.tan.light') 100%);
+}
+
+h1, h2, h3 {
+  @apply font-display text-blue-dark;
+}
+
+h1 {
+  @apply text-6xl leading-none mb-10;
+}
+
+p {
+  @apply w-full max-w-xl text-blue-medium;
+}
